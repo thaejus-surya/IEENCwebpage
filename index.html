@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/2a74852d21.js" crossorigin="anonymous"></script>
+    <title>Blogs</title>
+  </head>
+  <body>
+    <div class="heading"> 
+      <h1 >IE E&C Manipal</h1>
+      <div class="break"></div>
+      <h4>The Official Electronics & Communication Club of Manipal</h3>
+    </div>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <i class="fas fa-bars"></i>
+            </a>
+        </span>
+        <ul class="navbar-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="electronics.html">ELECTRONICS</a></li>
+            <li><a href="coding.html">ML/CODING</a></li>
+            <li><a href="miscellaneous.html">MISCELLANEOUS</a></li>
+        </ul>
+    </nav>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="coding.html">ML/Coding</a>
+        <a href="miscellaneous.html">Miscellaneous</a>
+    </div>
+    <div class="body" id="main">
+    <div class="about">
+        <h2 id="head">About: </h2>
+        <p class="para">IE-E&C is the official Students' Chapter of Electronics and Communication which goes beyond the theories into practical applications. We aspire to enhance the technical understanding of every individual who’s interested in areas concerning Electronics & Communication by conducting various workshop, events, and talks throughout the year. We, being an established student body functioning as per the guidelines provided by ‘The Institution of Engineers (India)’, see to it that we provide enriched technical experience and also help students in areas pertaining to academia.
+        </p>
+    </div>
+    <div class="types">
+        <h3 id="head">Domains: </h3>
+    <section class="main">
+      <h3 id="names"><i class="fas fa-dot-circle fa-xs"></i> Electronics</h2>
+    </section>
+
+    <section class="main">
+        <h3 id="names"><i class="fas fa-dot-circle fa-xs"></i> ML/Coding</h2>
+    </section>
+    <section class="main">
+        <h3 id="names"><i class="fas fa-dot-circle fa-xs"></i> Miscellaneous</h2>     
+    </section>
+    </div>
+</div>
+<footer class="footer">
+    <h3 class="follow">Follow: 
+        <a href="https://www.instagram.com/ieenc_manipal/?hl=en">
+          ieenc_manipal  <i class="fab fa-instagram"></i>
+        </a>
+    </h3>
+    <p>By: Thaejus Surya M T</p>
+    <p>Man-Comm Member 2021-22</p>
+</footer>
+<script>
+    function openSlideMenu(){
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px'; 
+    }
+    function closeSlideMenu(){
+        document.getElementById('side-menu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0'; 
+    }
+</script>
+  </body>
+</html>
+
