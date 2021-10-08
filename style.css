@@ -195,6 +195,7 @@ a {
     width: 85%;
     margin-top: 20px;
     margin-bottom: 35px;
+    overflow: hidden;
   }
   .body {
     height: 38em;
